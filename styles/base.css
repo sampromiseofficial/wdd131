@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+header, main, footer {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+#course-title {
+  background-color: #24567f;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+#student {
+  color: yellow; /* Highlighted name */
+  font-weight: 600;
+}
+
+.nav-bar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem 0;
+}
+
+.nav-bar a {
+  color: #fff3e0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-color: #24567f;
+}
+
+/* Main container styling */
+main {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding-left: 50px;
+  padding-right: 50px;  
+}
+
+/* Card section styled as grid with two columns */
+.card {
+  gap: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 98.5%;
+  border-right: 1px solid #24567f;
+  border-left: 1px solid #24567f;
+  border-bottom: 1px solid #24567f;
+}
+
+/* Shared card header style */
+.about-me h1,
+.web-resources h1 {
+  background-color: #1b4d7a;
+  color: white;
+  padding: 10px;
+  margin: 0 -20px 20px -20px;
+  font-size: 1.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Profile + text section */
+.mine {
+  display: flex;
+  flex-direction:row-reverse;
+  gap: 20px;
+}
+
+.mine img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.mine p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Location section */
+.about-location h2 {
+  margin-top: 30px;
+  text-align: center;
+  color: #1b4d7a;
+  font-size: 1.3rem;
+  border-bottom: 0.5px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.country {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.country img {
+  max-width: 150px;
+}
+
+.country figure {
+  margin-bottom: 10px;
+  height: auto;
+}
+figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.country p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Optional flag label */
+.country {
+  font-size: 0.8rem;
+  color: #555;
+  display: flex;
+  align-items:center
+}
+
+/* Web resources list */
+.web-resources ul {
+  list-style-type: disc;
+  padding-left: 10px;
+  margin-top: 120px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.web-resources li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.web-resources li:hover {
+  color:blue;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #1b4d7a;
+  display:grid;
+  margin-top: 10px;
+  place-items: center;
+
+}
+
+footer p {
+  color: white;
+}
+
+#lastModified {
+  color: yellow;
+  margin-top: 0.5px;
+}
