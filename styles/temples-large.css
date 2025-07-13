@@ -3,6 +3,12 @@
   #menu {
     display: none;
   }
+  
+  body {
+    font-family: 'Lato', 'Montserrat', sans-serif;
+    background-color: gainsboro;
+    color: #333;
+}
 
   nav ul.navigation {
     display: flex !important;
