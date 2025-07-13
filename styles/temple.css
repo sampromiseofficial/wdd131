@@ -6,13 +6,13 @@
 
 body {
   font-family: 'Lato', 'Montserrat', sans-serif;
-  background-color: #ffffff;
+  background-color: gainsboro;
   color: #333;
 }
 
 /* === Header Styles === */
 header {
-  background-color: #4b007d;
+  background-color: orange;
   color: white;
   padding: 1rem;
   position: relative;
@@ -46,14 +46,17 @@ header h1 {
   content: "❎";
 }
 
+nav {
+  display: flex;
+}
+
 /* === Navigation === */
 nav ul.navigation {
   display: none;
   flex-direction: column;
   list-style: none;
-  background-color: #4b007d;
+  background-color: green;
   text-align: center;
-  padding: 0.5rem 0;
 }
 
 nav ul.navigation li {
@@ -68,13 +71,22 @@ nav ul.navigation li a {
 }
 
 nav ul.navigation li a:hover {
-  background-color: #7e3ff2;
+  background-color: orangered;
   border-radius: 5px;
+  font-size: larger;
 }
 
 /* Show menu when open (mobile toggle JS) */
 nav ul.navigation.open {
   display: flex;
+  flex-direction: column;
+  background-color: grey;
+  position: absolute;
+  top: 60px; /* adjust as needed */
+  right: 0;
+  left: 0;
+  z-index: 999;
+  padding: 1rem 0;
 }
 
 .active::before {
@@ -83,8 +95,8 @@ nav ul.navigation.open {
 
 /* === Main Content === */
 main {
-  max-width: 900px;
-  margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 1rem;
   text-align: center;
 }
@@ -97,6 +109,8 @@ main h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  background-color: grey;
+  border-radius: 0.5rem;
 }
 
 figure {
@@ -114,11 +128,12 @@ figure img {
 figcaption {
   margin-top: 0.5rem;
   font-weight: 600;
+  color: aliceblue;
 }
 
 /* === Footer === */
 footer {
-  background-color: #4b007d;
+  background-color: green;
   color: white;
   text-align: center;
   padding: 1rem;
