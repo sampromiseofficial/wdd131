@@ -1,0 +1,72 @@
+/* Large screen styles */
+@media screen and (min-width: 600px) {
+    :root {
+    --primary: green;
+    --secondary: white;
+    --accent: purple;
+    --text-dark: black;
+    --bg-light: grey;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header {
+        margin-right: 6.3px;
+        margin-left: 6.4px;
+        margin-top: 0.5rem; 
+    }
+
+    picture {
+        border-top: 0.05rem solid;
+    }
+
+    picture img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    h2 {
+        background-color: var(--accent);
+        color: var(--text-light);
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        position: relative;
+        text-align: center;
+    }
+
+    .data {
+        top: 150px;
+        left: 40px;
+        position: absolute;
+        padding: 1rem;
+        background-color: var(--secondary);
+        border-radius: 10px;
+        border-top: none;
+    }
+    
+    .weather {
+        top: 600px;
+        right: 40px;
+        position: absolute;
+        padding: 1rem;
+        background-color: var(--secondary);
+        border-radius: 10px;
+    }
+    
+    .weather-icon {
+        display: inline;
+    }
+    
+    .mobile-icon {
+        display: none;
+    }
+
+    footer {
+        margin-right: 6.3px;
+        margin-left: 6.4px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nigeria - Oni Samson Promise</title>
+  <meta name="description" content="A webpage information about Nigeria." />
+  <meta name="author" content="Oni Samson Promise" />
+  <link rel="stylesheet" href="styles/place.css" />
+  <link rel="stylesheet" href="styles/place-large.css" />
+  <script src="scripts/place.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/week_3_heroimagelarge.webp" media="(min-width: 600px)">
+            <img src="images/week_3_heroimagesmall.webp" alt="Nigeria">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 923,769 sq km</li>
+                <li><strong>Population:</strong> 223,804,632</li>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Languages:</strong> (English), Hausa, Yoruba, Igbo, and others</li>
+                <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
+                <li><strong>Time Zone:</strong> UTC+1</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <img src="images/cloud_sun_fill.svg" alt="Cloudy Icon" class="mobile-icon" />
+            <ul>
+                <li><strong>Temperature:</strong> 30°C</li>
+                <li><strong>Conditions:</strong> Mostly Sunny</li>
+                <li><strong>Wind:</strong> 12 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> &#10070; Oni Samson Promise &#10070; Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
