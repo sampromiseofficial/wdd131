@@ -76,3 +76,8 @@ footer {
     margin-top: 0;
     margin-bottom: 1rem;
 }
+
+#lastModified::after {
+    content: "...updated time";
+    color: var(--secondary);
+}
