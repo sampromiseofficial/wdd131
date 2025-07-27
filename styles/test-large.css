@@ -1,0 +1,25 @@
+/* === Responsive Styles (Large Screens) === */
+@media (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: gainsboro;
+    color: #333;
+    font-weight: 900;
+}
+
+  nav ul.navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

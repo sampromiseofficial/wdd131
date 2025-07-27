@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: gainsboro;
+  color: #333;
+  font-weight: 900;
+}
+
+/* === Header Styles === */
+header {
+  background-color: orange;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+
+/* === Menu Button === */
+#menu {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❎";
+}
+
+nav {
+  display: flex;
+}
+
+/* === Navigation === */
+nav ul.navigation {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  background-color: green;
+  text-align: center;
+}
+
+nav ul.navigation li {
+  padding: 0.5rem 1rem;
+}
+
+nav ul.navigation li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+nav ul.navigation li a:hover {
+  background-color: orangered;
+  border-radius: 5px;
+  font-size: larger;
+}
+
+/* Show menu when open (mobile toggle JS) */
+nav ul.navigation.open {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  position: absolute;
+  top: 60px; /* adjust as needed */
+  right: 0;
+  left: 0;
+  z-index: 999;
+  padding: 1rem 0;
+}
+
+.active::before {
+  content: "📍";
+}
+
+/* === Main Content === */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background-color: grey;
+  border-radius: 0.5rem;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+/* === Footer === */
+footer {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
