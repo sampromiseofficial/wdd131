@@ -1,0 +1,36 @@
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--primary-color);
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  color: var(--dark-text);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  /*loading: lazy;*/
+}
