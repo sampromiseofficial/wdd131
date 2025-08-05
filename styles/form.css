@@ -1,0 +1,117 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f0f5;
+  color: #2c1e34;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #e6dced;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background-color: blueviolet;
+  margin-top: 0.09rem;
+  max-width: 525px;
+  margin: 2rem auto;
+  padding: 0.7rem;
+  border-radius: 3px;
+}
+
+form label, form legend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+em {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-top: 1px;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  border: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-content: center;
+}
+
+.set1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.set2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type="radio"] {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background: blueviolet;
+  color: white;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"]:hover {
+  background: blueviolet;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: blueviolet;
+  color: white;
+  font-size: 0.85rem;
+  max-width: 520px;
+  margin: 2rem auto;
+  border-radius: 3px;
+}
