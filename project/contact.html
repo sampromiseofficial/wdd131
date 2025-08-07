@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> contact me  | oni samson promise Personal Portfolio</title>
+  <meta name="description" content="Personal Portfolio of oni samson promise - Developer & Designer">
+  <meta name="author" content="Oni Samson Promise">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/home-large.css">
+  <script defer src="scripts/contact.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="images/my_profile_portfolio_logo_new.webp" alt="Rafting company logo">
+            </a>
+            <h1>Oni Samson Promise</h1>
+            <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Contact Me</h1>
+            <p>I'd love to hear from you! Fill out the form below to get in touch.</p>
+        </section>
+        
+        <section class="contact-form">
+            <form id="contactForm" name="contactForm" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formResponse"></p>
+        </section>
+        
+        <section>
+            <h2>Social Platform Links</h2>
+            <nav class="socialmedia">
+                <a href="http://facebook.com/psalmproxy1010?mibextid=ZbWKwL">
+                    <img src="images/facebook_image.webp" alt="facebook">
+                </a>
+                <a href="http://twitter.com/psalmproxy">
+                    <img src="images/twitter_image.webp" alt="twitter">
+                </a>
+                <a href="http://instagram.com/psalmproxy789">
+                    <img src="images/instagram_image.webp" alt="instagram">
+                </a>
+                <a href="http://linkedin.com/in/samson-oni-9611a8266">
+                    <img src="images/linkdin_logo.webp" alt="linkdin">
+                </a>
+                <a href="http://github.com/sampromiseofficial">
+                    <img src="images/github_logo.webp" alt="github">
+                </a>
+                <a href="http://t.me/psalmproxy">
+                    <img src="images/telegram_logo.webp" alt="telegram">
+                </a>
+                <a href="http://wa.me/2347085952071">
+                    <img src="images/whatsapp_logo.webp" alt="whatsapp">
+                </a>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Oni Samson Promise </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
