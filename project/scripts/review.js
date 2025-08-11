@@ -1,7 +1,6 @@
-    let count = localStorage.getItem('reviewCount') || 0;
-    count++;
-    localStorage.setItem('reviewCount', count);
-    document.getElementById('reviewCount').textContent = count;
+// Load review count
+let reviewCount = localStorage.getItem("reviewCount") || 0;
+document.getElementById("reviewCount").textContent = reviewCount;
 
 // Footer dates
 // Set current year
@@ -17,4 +16,18 @@ const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+});
+
+// Toggle dark/light theme
+const themeToggle = document.getElementById("themeToggle");
+const body = document.body;
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+  body.classList.add("dark");
+}
+
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
 });

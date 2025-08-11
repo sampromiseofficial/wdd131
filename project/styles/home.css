@@ -18,11 +18,21 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
-  padding: 1rem;
+  padding-top: 0.5px;
+  padding-bottom: 1px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
-header, footer {
+header {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
   background-color: var(--primary-color);
   color: var(--bg-color);
   padding: 1rem;
@@ -112,7 +122,7 @@ a:hover {
   gap: 30px;
 }
 
-#contactForm {
+Form {
   display: flex;
   flex-direction: column;
   width: 100%;

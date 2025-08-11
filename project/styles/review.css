@@ -18,7 +18,10 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
-  padding: 1rem;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -37,7 +40,14 @@ p {
   justify-content: center;
 }
 
-header, footer {
+header {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
   background-color: var(--primary-color);
   color: var(--bg-color);
   padding: 1rem;
