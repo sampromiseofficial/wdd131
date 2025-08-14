@@ -26,30 +26,3 @@ themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");
   localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
 });
-
-// Contact form functionality
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-    const response = document.getElementById("formResponse");
-
-    if (name && email && message) {
-        // Save contact data
-        localStorage.setItem("contact", JSON.stringify({ name, email, message }));
-
-        // Increment review count
-        let count = parseInt(localStorage.getItem("reviewCount") || "0", 10);
-        count++;
-        localStorage.setItem("reviewCount", count);
-
-        response.textContent = `✅ Thank you, ${name}. Your message has been saved.`;
-        response.style.color = "green";
-        this.reset();
-    } else {
-        response.textContent = "⚠ Please fill in all fields correctly.";
-        response.style.color = "red";
-    }
-});

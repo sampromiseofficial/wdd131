@@ -1,8 +1,3 @@
-// Load review count
-let reviewCount = localStorage.getItem("reviewCount") || 0;
-document.getElementById("reviewCount").textContent = reviewCount;
-
-// Footer dates
 // Set current year
 const yearSpan = document.getElementById("year");
 yearSpan.textContent = new Date().getFullYear();
@@ -31,3 +26,9 @@ themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");
   localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
 });
+
+// Load review count
+let count = localStorage.getItem('reviewCount') || 0;
+count++;
+localStorage.setItem('reviewCount', count);
+document.getElementById('reviewCount').textContent = count;

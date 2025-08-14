@@ -28,16 +28,17 @@ body {
 h2 {
   display: flex;
   justify-content: center;
-  margin-top: 30px;  
+  margin-top: 55px;  
 }
 
 h3 {
-  font-size: 24px;
-}
-
-p {
+  font-size: 12px;
   display: flex;
   justify-content: center;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 header {
@@ -113,21 +114,6 @@ a:hover {
   background-color: var(--bg-color);
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.card {
-  border: 1px solid var(--bg-color);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  background-color: var(--bg-color);
-}
-
 .socialmedia {
   display: flex;
   margin-top: 10px;
@@ -140,78 +126,6 @@ a:hover {
 section {
   margin-top: 223px;
 }
-
-#contactForm {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 500px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-}
-
-.welcome-note {
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  gap: 20px;
-  max-width: 70%;
-  
-}
-
-.welcome-note img {
-  width: 100%;
-  max-width: 20%;
-  border: 2px solid var(--primary-color);
-  border-radius: 7px;
-}
-
-.welcome-note p {
-  text-align: justify;
-}
-
-.contact-form button {
-  background: var(--primary-color);
-  color: var(--bg-color);
-  font-weight: bold;
-  margin-top: 1.5rem;
-  cursor: pointer;
-  width: 100%;
-  padding: 0.5rem;
-  border-radius: 5px;
-  border: 1px solid var(--text-color);
-}
-
-.contact-form button:hover {
-  color: var(--dark-bg);
-  background-color: var(--bg-color);
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.25rem;
-  border-radius: 5px;
-  border: 3px solid var(--text-color);
-}
-
-input[type="email"] {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.25rem;
-  border-radius: 5px;
-  border: 3px solid var(--text-color);
-}
-
-textarea {
-  width: 100%;
-  max-width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.25rem;
-  border-radius: 5px;
-  border: 3px solid var(--text-color);
-}
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -231,29 +145,6 @@ textarea {
     display: block;
   }
 
-  .welcome-note img {
-    width: 100%;
-    max-width: 100%;
-    border: 2px solid var(--primary-color);
-    border-radius: 7px;
-  }
-  .welcome-note {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    gap: 20px;
-    max-width: 70%;
-  }
-  
-  textarea {
-  width: 100%;
-  max-width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.25rem;
-  border-radius: 5px;
-  border: 3px solid #333333;
-}
 }
 
 /* Dark Theme */
